@@ -9,3 +9,10 @@ TEST_CASE("Task A: printRange()") {
     CHECK(printRange(0, 0) == "0 ");
     CHECK(printRange(10, 1) == "");
 }
+
+TEST_CASE("Task B: sumRange()") {
+    CHECK(sumRange(-2, 10) == 52);
+    CHECK(sumRange(1, 3) == 6);
+    CHECK(sumRange(0, 0) == 0);
+    CHECK(sumRange(10, -2) == 0);
+}
