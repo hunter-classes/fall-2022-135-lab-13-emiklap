@@ -16,3 +16,12 @@ TEST_CASE("Task B: sumRange()") {
     CHECK(sumRange(0, 0) == 0);
     CHECK(sumRange(10, -2) == 0);
 }
+
+TEST_CASE("Task C: sumArray()") {
+    int size = 5;
+    int array[5] = {3, 5, -3, 2, 13};
+    int *arr = array;
+    CHECK(sumArray(arr, size) == 20);
+    CHECK(sumArray(arr, 4) == 7);
+    CHECK(sumArray(arr, 0) == 0);
+}
