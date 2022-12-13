@@ -46,3 +46,13 @@ bool isAlphanumeric(std::string s) {
     }
     return false;
 }
+
+bool nestedParens(std::string s) {
+    int lastChar = s.length() - 1;
+    if (s == "") {
+        return true;
+    } else if (s[0] == '(' && s[lastChar] == ')' && s.length() >= 2) {
+        return true && nestedParens(s.substr(1, lastChar-1));
+    }
+    return false;
+}

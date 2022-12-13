@@ -33,4 +33,8 @@ int main() {
     std::cout << "\n  <-- Task D --> \n";
     std::cout << "isAlphanumeric(\"jsfh2kj3\"): " << isAlphanumeric("jsfh2kj3") << "\n";
     std::cout << "isAlphanumeric(\"#H&K(H K#J*H-B#LW $GPO\"): " << isAlphanumeric("#H&K(H K#J*H-B#LW $GPO") << "\n";
+
+    std::cout << "\n  <-- Task E --> \n";
+    std::cout << "nestedParens(\"(())\"): " << nestedParens("(())") << "\n";
+    std::cout << "nestedParens(\"((B))\"): " << nestedParens("((B))") << "\n" ;
 }
