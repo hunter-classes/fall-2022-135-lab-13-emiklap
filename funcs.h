@@ -8,3 +8,6 @@ int sumRange(int left, int right);
 
 //task C
 int sumArray(int *arr, int size);
+
+//task D
+bool isAlphanumeric(std::string s);

@@ -25,9 +25,12 @@ int main() {
     arr[9] = -21;
 
     int sum1 = sumArray(arr, size); // Add all elements
-    std::cout "sumArray(arr, size): " << sum1 << std::endl;  // Sum is 43
+    std::cout <<  "sumArray(arr, size): " << sum1 << std::endl;  // Sum is 43
 
     int sum2 = sumArray(arr, 5); // Add up first five elements
     std::cout << "sumArray(arr, 5): " << sum2 << std::endl;  // Sum is 34
 
+    std::cout << "\n  <-- Task D --> \n";
+    std::cout << "isAlphanumeric(\"jsfh2kj3\"): " << isAlphanumeric("jsfh2kj3") << "\n";
+    std::cout << "isAlphanumeric(\"#H&K(H K#J*H-B#LW $GPO\"): " << isAlphanumeric("#H&K(H K#J*H-B#LW $GPO") << "\n";
 }

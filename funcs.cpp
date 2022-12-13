@@ -36,3 +36,13 @@ int sumArray(int *arr, int size) {
     }
     return sum;
 }
+
+bool isAlphanumeric(std::string s) {
+    bool charAlphaNum = isalnum(s[0]);
+    if (charAlphaNum && s.length() == 1) {
+        return true;
+    } else if (charAlphaNum && s.length() > 1) {
+        return true && isAlphanumeric(s.substr(1));
+    }
+    return false;
+}

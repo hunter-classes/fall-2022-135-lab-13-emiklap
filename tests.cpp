@@ -25,3 +25,10 @@ TEST_CASE("Task C: sumArray()") {
     CHECK(sumArray(arr, 4) == 7);
     CHECK(sumArray(arr, 0) == 0);
 }
+
+TEST_CASE("Task D: isAlphanumeric()") {
+    CHECK(!isAlphanumeric("2c7!g#VUasEjfRQR"));
+    CHECK(!isAlphanumeric("xgx Zb@C@z4y Enjg3"));
+    CHECK(isAlphanumeric("SarAuD8RFWDWgQZU"));
+    CHECK(!isAlphanumeric("SarAuD8R FWDWgQZU"));
+}
